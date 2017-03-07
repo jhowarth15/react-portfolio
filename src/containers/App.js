@@ -3,7 +3,9 @@ import { bindActionCreators } from 'redux';
 import { connect } from 'react-redux';
 import * as BenchmarkActions from '../actions/BenchmarkActions';
 import Project from '../components/Project';
+import Introduction from '../components/Introduction';
 import Footer from '../components/Footer';
+import Profile from '../components/Profile';
 import Header from '../components/Header';
 import Statistics from '../components/Statistics';
 import { startTime } from '../index';
@@ -13,7 +15,7 @@ import { startTime } from '../index';
  * Again, this is because it serves to wrap the rest of our application with the Provider
  * component to make the Redux store available to the rest of the app.
  */
-export default class App extends Component {
+export class App extends Component {
   componentDidMount() {
     const { actions } = this.props;
     actions.updateBenchmark(new Date().getTime() - startTime);
@@ -28,10 +30,14 @@ export default class App extends Component {
     return (
       <div className="main-app-container">
         <Header personalInfo={personalInfo} />
-        <Statistics benchmark={benchmark} />
-        <div className="main-app-nav">Selected Projects</div>
+        <Profile />
+        <h1 display="block">Hi, I'm Josh.</h1>
+        <Introduction personalInfo={personalInfo} />
+        <br/>
+        <div className="main-app-nav">Recent Projects</div>
         {/* notice that we then pass those unpacked props into the Counter component */}
           {projectEntries}
+        <Statistics benchmark={benchmark} />
         <Footer personalInfo={personalInfo} />
       </div>
     );

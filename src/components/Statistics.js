@@ -8,7 +8,7 @@ export default class Statistics extends Component {
 
     return (
       <div className="statistics">
-        React.js rendered this page in {benchmark} milliseconds. Refresh to benchmark again.
+        React.js rendered this page in {benchmark} milliseconds! Refresh to benchmark again.
       </div>
     );
   }
