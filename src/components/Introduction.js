@@ -7,13 +7,13 @@ export default class Introduction extends Component {
       <div className="introduction-container">
         <div className="introduction">
           <h4>
-            <strong><p>I'm a software engineer in London. I love solving tough engineering challenges and building awesome applications, watching them develop and advance with each iteration! Recently, I've been exploring machine learning techniques for cyber breach event detection and efficient state management in single-page apps. </p>
+            <strong><p>I'm a software engineer in London. I love solving tough engineering challenges and building awesome applications, watching them develop and advance with each iteration! Recently, I've been exploring machine learning techniques for cyber breach event detection and efficient state management in single-page apps. </p></strong>
             
-            <p>You can read about specific applications I have built below.</p></strong>
+            <br />
             <p>A few fun facts about me:</p>
-            <p>1.  I grew up on a dairy farm with over 100 cattle</p>
-            <p>2.  I'm an American Red Cross trained lifeguerd</p>
-            <p>3.  I'm a recently recovering Windows user</p>
+            <p><i>1.  I grew up on a dairy farm with over 100 cattle</i></p>
+            <p><i>2.  I'm an American Red Cross trained lifeguerd</i></p>
+            <p><i>3.  I'm a recently recovering Windows user</i></p>
           </h4>
         </div>
       </div>

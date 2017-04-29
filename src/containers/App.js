@@ -22,6 +22,8 @@ export class App extends Component {
   }
 
   render() {
+
+
     const { projects, benchmark, personalInfo } = this.props;
     const projectEntries = projects.map((project, index) => {
       return <Project key={index} project={project} />;
